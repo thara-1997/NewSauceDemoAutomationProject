@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7adbf2e-e0ba-4259-9dc6-87dfd0663efa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/base/BaseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/pages/ProductListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/tests/ProductListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/util/DataDrivenProvider.java" afterDir="false" />
+    <list default="true" id="d7adbf2e-e0ba-4259-9dc6-87dfd0663efa" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/tests/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sauseDemo/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sauseDemo/pages/ProductListPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +38,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.CartTest.testVerifyContinueShoppingButton.executor": "Run",
+    "TestNG.CartTest.testVerifyProductDetailsInCart.executor": "Run",
+    "TestNG.CartTest.testVerifyRemoveCartItems.executor": "Run",
     "TestNG.LoginTest.testVerifyLoginWithLockedOutUser.executor": "Run",
     "TestNG.LoginTest.testVerifyLoginWithPerformanceGlitchUser.executor": "Run",
     "TestNG.LoginTest.testVerifyPlaceholderNames.executor": "Run",
@@ -58,12 +53,12 @@
     "TestNG.ProductListTest.testVerifyPriceLowToHigh.executor": "Run",
     "TestNG.ProductListTest.testVerifyProductListPage.executor": "Run",
     "TestNG.ProductListTest.testVerifyZToAFilter.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ProductListTest.testVerifyPriceLowToHigh">
-    <configuration name="ProductListTest.testVerifyAToZFilter" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CartTest.testVerifyCheckoutButton">
+    <configuration name="CartTest.testVerifyCheckoutButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauseDemoNewTesPR" />
       <extension name="coverage">
         <pattern>
@@ -72,8 +67,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sauseDemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.ProductListTest" />
-      <option name="METHOD_NAME" value="testVerifyAToZFilter" />
+      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.CartTest" />
+      <option name="METHOD_NAME" value="testVerifyCheckoutButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -81,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest.testVerifyClickRemoveButton" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest.testVerifyContinueShoppingButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauseDemoNewTesPR" />
       <extension name="coverage">
         <pattern>
@@ -90,8 +85,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sauseDemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.ProductListTest" />
-      <option name="METHOD_NAME" value="testVerifyClickRemoveButton" />
+      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.CartTest" />
+      <option name="METHOD_NAME" value="testVerifyContinueShoppingButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -99,7 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest.testVerifyPriceHighToLow" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartTest.testVerifyProductDetailsInCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SauseDemoNewTesPR" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +103,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sauseDemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.ProductListTest" />
-      <option name="METHOD_NAME" value="testVerifyPriceHighToLow" />
+      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.CartTest" />
+      <option name="METHOD_NAME" value="testVerifyProductDetailsInCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTest.testVerifyRemoveCartItems" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauseDemoNewTesPR" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sauseDemo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sauseDemo.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.CartTest" />
+      <option name="METHOD_NAME" value="testVerifyRemoveCartItems" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,31 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductListTest.testVerifyZToAFilter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SauseDemoNewTesPR" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sauseDemo.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sauseDemo.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.sauseDemo.tests.ProductListTest" />
-      <option name="METHOD_NAME" value="testVerifyZToAFilter" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CartTest.testVerifyCheckoutButton" />
+        <item itemvalue="TestNG.CartTest.testVerifyContinueShoppingButton" />
+        <item itemvalue="TestNG.CartTest.testVerifyRemoveCartItems" />
+        <item itemvalue="TestNG.CartTest.testVerifyProductDetailsInCart" />
         <item itemvalue="TestNG.ProductListTest.testVerifyPriceLowToHigh" />
-        <item itemvalue="TestNG.ProductListTest.testVerifyPriceHighToLow" />
-        <item itemvalue="TestNG.ProductListTest.testVerifyZToAFilter" />
-        <item itemvalue="TestNG.ProductListTest.testVerifyAToZFilter" />
-        <item itemvalue="TestNG.ProductListTest.testVerifyClickRemoveButton" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +167,19 @@
       <option name="presentableId" value="Default" />
       <updated>1761753106994</updated>
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1761847422353</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761847422353</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

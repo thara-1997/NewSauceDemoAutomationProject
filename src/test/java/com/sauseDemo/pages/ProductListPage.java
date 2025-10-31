@@ -23,6 +23,9 @@ public class ProductListPage {
     private final By byAllProducts = By.xpath("//div[@class = 'inventory_item_description']");
     private final By byPriceList = By.xpath("//div[@class = 'inventory_item_price']");
 
+    private final By bySauceLabsBackPackBtn = By.id("add-to-cart-sauce-labs-backpack");
+    private final By bySauceLabsBikeLightBtn = By.id("add-to-cart-sauce-labs-bike-light");
+
     public ProductListPage(WebDriver driver){
         this.driver = driver;
     }
@@ -63,5 +66,12 @@ public class ProductListPage {
 
     public List<WebElement> getPriceList(){
         return driver.findElements(byPriceList);
+    }
+
+    public void clickSauceLabsBackPackBtn(){
+        driver.findElement(bySauceLabsBackPackBtn).click();
+    }
+    public void clickSauceLabsBikeLightBtn(){
+        driver.findElement(bySauceLabsBikeLightBtn).click();
     }
 }
